@@ -1,4 +1,19 @@
 
+Tests
+=====
+
+Run tests : "SqlImportTest.java"
+
+SQL scripts for databases tests :
+- mysql.sql
+- oracle1.sql
+- oracle2.sql
+- postgres.sql
+- standard.sql
+
+--------------------
+
+
 Run "ParserCreateTable.java"
 
 * SQL query :

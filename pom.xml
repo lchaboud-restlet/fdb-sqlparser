@@ -4,12 +4,37 @@
   <artifactId>fdb-sqlparser</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-	<dependencies>
 	  <dependency>
 	    <groupId>com.foundationdb</groupId>
 	    <artifactId>fdb-sql-parser</artifactId>
 	    <version>1.4.0</version>
 	  </dependency>
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
   </dependencies>
-</project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build></project>

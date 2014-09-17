@@ -20,9 +20,9 @@ public class ParserCreateTable {
 				"    kind        varchar(10),\n"+
 				"    len         interval hour to minute\n"+
 				")";
+		System.out.println("SQL query : \n"+s+"\n\n");
 		final StatementNode stmt = parser.parseStatement(s);
-		System.out.println(stmt.getNodeType());
-		System.out.println(stmt.getClass());
+		System.out.println("===========================================================================");
 		stmt.treePrint();
 		System.out.println("===========================================================================");
 		final CreateTableNode ctn = (CreateTableNode) stmt;
